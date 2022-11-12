@@ -1,21 +1,18 @@
-.header{ border: red 1px solid ; height:120px; width:auto; border-radius:18px ; -webkit-border-radius:18px ; -moz-border-radius:18px ; -ms-border-radius:18px ; -o-border-radius:18px;padding: 10px; }
+.header{  background-color: rgb(126, 125, 125); height:120px; width:auto;padding: 10px; }
 img{ border-radius:30% ; -webkit-border-radius:30% ; -moz-border-radius:30% ; -ms-border-radius:30% ; -o-border-radius:30% ; position: absolute;
     margin-top: 7px;}
 .bau:hover{ transform:scale(1.03) ; -webkit-transform:scale(1.03) ; -moz-transform:scale(1.03) ; -ms-transform:scale(1.03) ; -o-transform:scale(1.03) ; }
 
 h1:hover{ transform: scale(1.03); -webkit-transform: scale(1.03); -moz-transform: scale(1.03); -ms-transform: scale(1.03); -o-transform: scale(1.03); }
-ul {
+.name{padding-right: 10px;}
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
   }
-  
-  li {
-    float: left;
-  }
-  
+
   li a {
     display: block;
     color: white;
@@ -69,8 +66,7 @@ ul {
 
 body{margin: 0px;
 padding: 0px;}
-.header{margin-left: 3px;
-margin-right: 3px;
+.header{
 margin-top: 00px;
 position: relative;}
 
@@ -97,6 +93,11 @@ position: relative;}
   flex-wrap:wrap;
   
 }
+
+.boty{width: 70%;
+  height:auto;
+  float: right;
+  background-color: rgb(163, 163, 163);}
 
 .container .card{
   position: relative;
@@ -248,3 +249,11 @@ position: relative;}
 .imgx:hover{opacity: 1;}
 
 a{width:auto;}
+
+.fleft {float: left;
+width:30%;background-color: rgb(217, 217, 217); height:468px;overflow:scroll;}
+h2{text-align: center;
+}
+.pad{padding:5px;}
+.boty{ height:468px;overflow:scroll;}
+
