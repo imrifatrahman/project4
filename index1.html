@@ -17,6 +17,32 @@
     </style>
   </head>
   <body>
+    <div>
+      <!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function getActiveUsers() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          // Update the page with the number of active users
+          document.getElementById("active-users").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "/getActiveUsers", true);
+      xhttp.send();
+    }
+
+    window.addEventListener("load", getActiveUsers);
+  </script>
+</head>
+<body>
+  <div id="active-users"></div>
+</body>
+</html>
+
+    </div>
     <div id="game">
       <h1>Guessing Game</h1>
       <p>I'm thinking of a number between 1 and 100. Can you guess what it is?</p>
@@ -56,6 +82,8 @@
         document.getElementById('attempts').innerHTML = 'Number of attempts: ' + attempts;
       }
     </script>
+
+
 
  
   </body>
